@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoTrack – Hyderabad Waste Crisis</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/google-fallback.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon/leaf.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+
+    <meta name="description"
+        content="EcoTrack: A data-driven research report on the solid waste crisis in Hyderabad, Pakistan. Exploring collection gaps, health impacts, and workforce shortages.">
+    <meta name="keywords"
+        content="Hyderabad Waste Crisis, Solid Waste Management Pakistan, EcoTrack, Hyderabad Research, Environmental Health Pakistan">
+    <meta name="author" content="Ahmer Shah">
+    <link rel="canonical" href="https://ecotrack.ahmershah.dev/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ecotrack.ahmershah.dev/">
+    <meta property="og:title" content="EcoTrack – Hyderabad Waste Crisis Research Report">
+    <meta property="og:description"
+        content="Investigating waste generation and public health consequences in Hyderabad. 49.6M tons of waste generated annually.">
+    <meta property="og:image" content="https://ecotrack.ahmershah.dev/assets/images/og/website.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ecotrack.ahmershah.dev/">
+    <meta property="twitter:title" content="EcoTrack – Hyderabad Waste Crisis">
+    <meta property="twitter:description" content="A deep dive into Hyderabad's waste mismanagement and health impacts.">
+    <meta property="twitter:image" content="https://ecotrack.ahmershah.dev/assets/images/og/website.png">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Report",
+  "headline": "EcoTrack – Hyderabad Waste Crisis Research Report 2025",
+  "description": "A data-driven investigation into solid waste generation, collection gaps, and public health consequences in Hyderabad, Pakistan.",
+  "author": {
+    "@type": "Person",
+    "name": "Ahmer Shah",
+    "url": "https://ecotrack.ahmershah.dev/",
+    "sameAs": [
+      "https://github.com/ahmershahdev",
+      "https://linkedin.com/in/ahmershahdev"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "EcoTrack",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ecotrack.ahmershah.dev/assets/images/og/website.png"
+    }
+  },
+  "datePublished": "2026-05-08",
+  "locationCreated": {
+    "@type": "Place",
+    "name": "Hyderabad, Pakistan"
+  }
+}
+</script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" id="mainNav">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+                <div>
+                    <span class="brand-name">EcoTrack</span>
+                    <span class="brand-tagline">Waste Intelligence System</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+                <ul class="navbar-nav align-items-center gap-1 me-3">
+                    <li class="nav-item">
+                        <a class="nav-link-custom" href="#overview">
+                            <i class="bi bi-grid-1x2"></i> Overview
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-custom" href="#charts">
+                            <i class="bi bi-bar-chart-line"></i> Analytics
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-custom" href="#diseases">
+                            <i class="bi bi-heart-pulse"></i> Health Impact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-custom" href="#sources">
+                            <i class="bi bi-journal-bookmark"></i> Sources
+                        </a>
+                    </li>
+                </ul>
+                <span class="nav-badge d-none d-lg-inline">
+                    <i class="bi bi-circle-fill me-1" style="font-size:0.5rem;color:#4caf50;animation:blink 1.2s infinite"></i>
+                    Live Research
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero" id="home">
+        <div class="hero-bg-glow"></div>
+        <div class="hero-grid-overlay"></div>
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="hero-badge-pill">
+                        <i class="bi bi-activity"></i>
+                        Research Report 2025 — Hyderabad, Pakistan
+                    </div>
+                    <h1>
+                        Solid Waste<br>
+                        Crisis in <span class="grad-text typing-wrapper"><span class="typed-text"></span><span
+                                class="cursor"></span></span>
+                    </h1>
+                    <p class="hero-desc">
+                        A data-driven investigation into the solid waste generation, collection gaps, workforce
+                        shortages, and public health consequences plaguing Hyderabad's communities.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#charts" class="btn-primary-custom">
+                            <i class="bi bi-bar-chart-fill"></i> Explore Data
+                        </a>
+                        <a href="#sources" class="btn-outline-custom">
+                            <i class="bi bi-journal-text"></i> View Sources
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-stats-bar">
+                <div class="hero-stat-item">
+                    <div class="hero-stat-num">49.6M</div>
+                    <div class="hero-stat-label"><i class="bi bi-trash3 me-1"></i>Tons waste/year — Pakistan</div>
+                </div>
+                <div class="hero-stat-item">
+                    <div class="hero-stat-num">~50%</div>
+                    <div class="hero-stat-label"><i class="bi bi-x-circle me-1"></i>Waste left uncollected</div>
+                </div>
+                <div class="hero-stat-item">
+                    <div class="hero-stat-num">960T</div>
+                    <div class="hero-stat-label"><i class="bi bi-water me-1"></i>Dumped in Phuleli daily</div>
+                </div>
+                <div class="hero-stat-item">
+                    <div class="hero-stat-num">4</div>
+                    <div class="hero-stat-label"><i class="bi bi-geo-alt me-1"></i>Sanitary landfills nationwide</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="overview" class="section-alt">
+        <div class="container">
+            <div class="row mb-5 reveal">
+                <div class="col-12">
+                    <div class="section-eyebrow"><i class="bi bi-layers"></i> Key Statistics</div>
+                    <div class="section-title">Crisis <span class="accent">By the Numbers</span></div>
+                    <div class="section-divider"></div>
+                    <p class="section-sub">Current state of solid waste mismanagement across Hyderabad and Pakistan —
+                        compiled from verified research data.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-6 col-md-4 col-lg-2 reveal">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-globe"></i></div>
+                        <div class="stat-num">49.6M</div>
+                        <div class="stat-label">Tons generated annually across Pakistan</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 reveal">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="bi bi-building-fill"></i></div>
+                        <div class="stat-num">54,888</div>
+                        <div class="stat-label">Tons per day — national daily generation</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 reveal">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-truck"></i></div>
+                        <div class="stat-num">60–70%</div>
+                        <div class="stat-label">National waste collection rate only</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 reveal">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="bi bi-person-fill-x"></i></div>
+                        <div class="stat-num">~560</div>
+                        <div class="stat-label">Sanitary worker shortage — HMC Hyderabad</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 reveal">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-wind"></i></div>
+                        <div class="stat-num">80%</div>
+                        <div class="stat-label">Waste discarded in open areas in Hyderabad</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 reveal">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-virus"></i></div>
+                        <div class="stat-num">36.8%</div>
+                        <div class="stat-label">Residents near dumps experienced diarrhoea in 2 weeks</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="charts">
+        <div class="container">
+            <div class="row mb-5 reveal">
+                <div class="col-12">
+                    <div class="section-eyebrow"><i class="bi bi-bar-chart-line"></i> Data Visualizations</div>
+                    <div class="section-title">Research <span class="accent">Analytics</span></div>
+                    <div class="section-divider"></div>
+                    <p class="section-sub">Visual breakdown of all statistical data from Sahil's research report.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-xl-4 reveal">
+                    <div class="chart-card">
+                        <div class="chart-title"><i class="bi bi-bar-chart-steps me-2"></i>Generation vs Lifting
+                            Capacity</div>
+                        <div class="chart-sub">City Taluka & Latifabad — Hyderabad (tons/day)</div>
+                        <canvas id="chart1"></canvas>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4 reveal">
+                    <div class="chart-card">
+                        <div class="chart-title"><i class="bi bi-pie-chart-fill me-2"></i>Pakistan Waste Collection Rate
+                        </div>
+                        <div class="chart-sub">National average — collected vs open-dumped/burned</div>
+                        <canvas id="chart2"></canvas>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4 reveal">
+                    <div class="chart-card">
+                        <div class="chart-title"><i class="bi bi-graph-up-arrow me-2"></i>Hyderabad Waste Generation
+                            Trend</div>
+                        <div class="chart-sub">2015 → 2021 → 2025 (tons/day)</div>
+                        <canvas id="chart3"></canvas>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4 reveal">
+                    <div class="chart-card">
+                        <div class="chart-title"><i class="bi bi-activity me-2"></i>Health Impacts — Reported %</div>
+                        <div class="chart-sub">Workers & residents near dump sites</div>
+                        <canvas id="chart4"></canvas>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4 reveal">
+                    <div class="chart-card">
+                        <div class="chart-title"><i class="bi bi-people-fill me-2"></i>HMC Workforce Gap</div>
+                        <div class="chart-sub">Required vs Available sanitary workers</div>
+                        <canvas id="chart5"></canvas>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4 reveal">
+                    <div class="chart-card">
+                        <div class="chart-title"><i class="bi bi-geo-alt-fill me-2"></i>Sanitary Landfills Distribution
+                        </div>
+                        <div class="chart-sub">Only 4 exist for all of Pakistan</div>
+                        <canvas id="chart6"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="diseases" class="section-alt">
+        <div class="container">
+            <div class="row mb-5 reveal">
+                <div class="col-12">
+                    <div class="section-eyebrow"><i class="bi bi-heart-pulse"></i> Health Impact Analysis</div>
+                    <div class="section-title">Diseases <span class="accent">Linked to Waste</span></div>
+                    <div class="section-divider"></div>
+                    <p class="section-sub">Diseases observed in communities and workers near open dumping sites across
+                        Hyderabad.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-xl-3 reveal">
+                    <div class="disease-card">
+                        <div class="disease-icon-box"><i class="fa-solid fa-droplet"></i></div>
+                        <div class="disease-title">Diarrhoeal Diseases</div>
+                        <p class="disease-text">Open dumping contaminates water sources — causing cholera, typhoid and
+                            diarrhoea via faecal-oral route in low-income urban areas.</p>
+                        <span class="disease-pill"><i class="bi bi-graph-up me-1"></i>36.8% in 2 weeks</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 reveal">
+                    <div class="disease-card">
+                        <div class="disease-icon-box"><i class="fa-solid fa-lungs"></i></div>
+                        <div class="disease-title">Respiratory Illnesses</div>
+                        <p class="disease-text">Dust and chemical fumes from dump sites cause chronic cough,
+                            breathlessness, and bronchitis in workers and nearby residents.</p>
+                        <span class="disease-pill"><i class="bi bi-graph-up me-1"></i>58.5% workers affected</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 reveal">
+                    <div class="disease-card">
+                        <div class="disease-icon-box"><i class="fa-solid fa-mosquito"></i></div>
+                        <div class="disease-title">Vector-Borne Diseases</div>
+                        <p class="disease-text">Garbage accumulation creates breeding grounds for mosquitoes and
+                            rodents, increasing dengue and malaria in dump-adjacent areas.</p>
+                        <span class="disease-pill"><i class="bi bi-exclamation-triangle me-1"></i>Higher incidence
+                            rate</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 reveal">
+                    <div class="disease-card">
+                        <div class="disease-icon-box"><i class="fa-solid fa-eye"></i></div>
+                        <div class="disease-title">Skin & Eye Infections</div>
+                        <p class="disease-text">Flies, contaminated groundwater, and leachate from open dumps cause
+                            conjunctivitis, skin rashes, and wound infections.</p>
+                        <span class="disease-pill"><i class="bi bi-water me-1"></i>Groundwater contamination</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sources" class="section-dark">
+        <div class="container">
+            <div class="row mb-5 reveal">
+                <div class="col-12">
+                    <div class="section-eyebrow"><i class="bi bi-journal-bookmark"></i> References</div>
+                    <div class="section-title" style="color:white">Verified <span class="accent">Sources</span></div>
+                    <div class="section-divider"></div>
+                    <p class="section-sub">All data sourced from peer-reviewed publications, government guides, and
+                        credible news sources.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 reveal">
+                    <div class="source-item"><span class="source-num">01</span><span class="source-text">Trade.gov —
+                            Pakistan Waste Management Country Guide <a
+                                href="https://www.trade.gov/country-commercial-guides/pakistan-waste-management"
+                                target="_blank"><i class="bi bi-box-arrow-up-right ms-2"></i></a></span><i
+                            class="bi bi-link-45deg source-icon"></i></div>
+                    <div class="source-item"><span class="source-num">02</span><span class="source-text">The Express
+                            Tribune (2015) — Hyderabad dumps 960 tons/day in Phuleli Canal <a
+                                href="https://tribune.com.pk/story/1005748" target="_blank"><i
+                                    class="bi bi-box-arrow-up-right ms-2"></i></a></span><i
+                            class="bi bi-link-45deg source-icon"></i></div>
+                    <div class="source-item"><span class="source-num">03</span><span class="source-text">PIDE RASTA
+                            Conference Paper — Comprehensive Assessment of Solid Waste Management in Pakistan</span><i
+                            class="bi bi-file-earmark-text source-icon"></i></div>
+                    <div class="source-item"><span class="source-num">04</span><span class="source-text">Scifiniti
+                            (2025) — Hyderabad Municipal Waste Study <a
+                                href="https://www.scifiniti.com/3079-1421/1/2025.0010" target="_blank"><i
+                                    class="bi bi-box-arrow-up-right ms-2"></i></a></span><i
+                            class="bi bi-link-45deg source-icon"></i></div>
+                    <div class="source-item"><span class="source-num">05</span><span class="source-text">The Express
+                            Tribune (2021) — HMC Mismanagement & Workforce Shortage <a
+                                href="https://tribune.com.pk/story/2307392" target="_blank"><i
+                                    class="bi bi-box-arrow-up-right ms-2"></i></a></span><i
+                            class="bi bi-link-45deg source-icon"></i></div>
+                    <div class="source-item"><span class="source-num">06</span><span class="source-text">The Express
+                            Tribune — Open Dumping Causes Infectious Diseases <a
+                                href="https://tribune.com.pk/story/2338603" target="_blank"><i
+                                    class="bi bi-box-arrow-up-right ms-2"></i></a></span><i
+                            class="bi bi-link-45deg source-icon"></i></div>
+                    <div class="source-item"><span class="source-num">07</span><span class="source-text">PMC / NCBI —
+                            Diarrhoeal Disease Study near Open Dump Sites <a
+                                href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12958709/" target="_blank"><i
+                                    class="bi bi-box-arrow-up-right ms-2"></i></a></span><i
+                            class="bi bi-link-45deg source-icon"></i></div>
+                    <div class="source-item"><span class="source-num">08</span><span class="source-text">PMC / NCBI —
+                            Respiratory Symptoms in Landfill Workers (58.5%) <a
+                                href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6862197/" target="_blank"><i
+                                    class="bi bi-box-arrow-up-right ms-2"></i></a></span><i
+                            class="bi bi-link-45deg source-icon"></i></div>
+                    <div class="source-item"><span class="source-num">09</span><span class="source-text">Dawn.com —
+                            Garbage Dumps & Community Health Hazards <a href="https://www.dawn.com/news/1235257"
+                                target="_blank"><i class="bi bi-box-arrow-up-right ms-2"></i></a></span><i
+                            class="bi bi-link-45deg source-icon"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <div class="footer-logo"><i class="fa-solid fa-leaf me-2"></i>EcoTrack</div>
+
+            <!-- Social Links Section -->
+            <div class="social-links-container">
+                <a href="https://github.com/ahmershahdev" target="_blank" aria-label="GitHub" class="social-link">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/ahmershahdev" target="_blank" aria-label="LinkedIn"
+                    class="social-link">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://ahmershah.dev" target="_blank" aria-label="Website" class="social-link">
+                    <i class="fa-solid fa-globe"></i>
+                </a>
+            </div>
+
+            <div class="footer-divider"></div>
+            <p class="footer-copy">© 2026 EcoTrack. All rights reserved — Research Project.</p>
+            <p class="footer-author">Developed by <strong>Ahmer Shah</strong></p>
+        </div>
+    </footer>
+
+    <div class="scroll-top" id="scrollTop">
+        <svg class="progress-ring" width="50" height="50">
+            <circle class="progress-ring__circle" stroke="url(#scrollGradient)" stroke-width="3" fill="transparent"
+                r="22" cx="25" cy="25" />
+            <defs>
+                <linearGradient id="scrollGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#1b5e20" />
+                    <stop offset="100%" stop-color="#4caf50" />
+                </linearGradient>
+            </defs>
+        </svg>
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery/jquery-3.7.1.min.js"></script>
+    <script src="assets/vendor/chart/chart.umd.min.js"></script>
+    <script src="assets/js/script.js" defer></script>
+</body>
+
+</html>

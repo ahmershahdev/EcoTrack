@@ -1,0 +1,76 @@
+# EcoTrack Project Information
+
+## Project Overview
+EcoTrack is a data-driven research report website investigating the solid waste crisis in Hyderabad, Pakistan. The project presents research findings through interactive visualizations, statistics, and detailed analysis of waste management failures and their public health impacts.
+
+## Author
+- **Name:** Ahmer Shah
+- **LinkedIn:** https://linkedin.com/in/ahmershahdev
+- **GitHub:** https://github.com/ahmershahdev
+- **Website:** https://ahmershah.dev
+- **Email:** support@ahmershah.dev
+
+## Website
+- **URL:** https://ecotrack.ahmershah.dev
+- **Type:** Research Report Website
+- **Location:** Hyderabad, Pakistan
+
+## Key Research Findings
+- 49.6 million tons of waste generated annually in Pakistan
+- 60-70% national waste collection rate (30-40% left uncollected)
+- 960 tons of waste dumped daily in Phuleli landfill
+- Only 4 sanitary landfills nationwide
+- Significant public health consequences including disease spread
+
+## Technologies
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Charting Library:** Chart.js 4.4.1
+- **UI Framework:** Bootstrap 5.3.2
+- **Icons:** Bootstrap Icons, Font Awesome 6.5.0
+- **Typography:** Google Fonts (Orbitron, Rajdhani, Inter)
+- **jQuery:** 3.7.1 (for smooth scrolling)
+- **Meta Tags:** OpenGraph, Twitter Card, Schema.org structured data
+
+## File Structure
+```
+EcoTrack/
+├── index.html          # Main HTML document
+├── css/
+│   └── style.css       # Custom styling with responsive design
+├── js/
+│   └── script.js       # Interactive features and chart initialization
+├── images/
+│   └── favicon/        # Favicon assets
+├── README.md           # Project documentation
+├── LICENSE.txt         # MIT License
+├── robots.txt          # SEO robots configuration
+├── sitemap.xml         # XML sitemap for search engines
+├── CNAME               # Custom domain configuration
+└── llms.txt            # This file
+
+## Features
+1. **Responsive Design** - Mobile-first, works on all screen sizes
+2. **Interactive Charts** - Bar charts and doughnut charts for data visualization
+3. **Smooth Scrolling** - Navigation with anchor links and smooth scroll behavior
+4. **Type Animation** - Animated typing effect on hero section
+5. **Scroll Effects** - Intersection Observer for reveal animations
+6. **Social Integration** - Links to GitHub, LinkedIn, and author website
+7. **SEO Optimized** - Meta tags, canonical URL, OpenGraph support
+8. **Modern UI** - Glassmorphism design with gradient effects
+
+## Sections on Website
+1. **Hero Section** - Eye-catching introduction with statistics
+2. **Overview** - Key statistics presented in card format
+3. **Analytics** - Interactive charts showing waste generation and collection data
+4. **Health Impact** - Information about diseases related to waste mismanagement
+5. **Sources** - Complete citations and references
+6. **Footer** - Author information and social links
+
+## Contact Information
+For inquiries, support, or collaboration:
+- Email: support@ahmershah.dev
+- GitHub Issues: https://github.com/ahmershahdev/ecotrack
+- LinkedIn: https://linkedin.com/in/ahmershahdev
+
+## License
+MIT License - Free to use, modify, and distribute with attribution

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ecomart.ahmershah.dev/sitemap.xml
