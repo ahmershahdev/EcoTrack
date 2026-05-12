@@ -40,6 +40,40 @@ const observer = new IntersectionObserver(
 );
 document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 
+const canTilt =
+  window.matchMedia("(hover: hover) and (pointer: fine)").matches &&
+  !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+if (canTilt) {
+  const tiltCards = document.querySelectorAll(".tilt-card");
+  const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+
+  tiltCards.forEach((card) => {
+    card.addEventListener("mousemove", (event) => {
+      const rect = card.getBoundingClientRect();
+      const x = event.clientX - rect.left;
+      const y = event.clientY - rect.top;
+      const midX = rect.width / 2;
+      const midY = rect.height / 2;
+      const tiltX = clamp(((y - midY) / midY) * -6, -8, 8);
+      const tiltY = clamp(((x - midX) / midX) * 6, -8, 8);
+
+      card.classList.add("tilting");
+      card.style.transform =
+        "perspective(900px) rotateX(" +
+        tiltX +
+        "deg) rotateY(" +
+        tiltY +
+        "deg)";
+    });
+
+    card.addEventListener("mouseleave", () => {
+      card.classList.remove("tilting");
+      card.style.transform = "perspective(900px) rotateX(0deg) rotateY(0deg)";
+    });
+  });
+}
+
 Chart.defaults.font.family = "Inter";
 Chart.defaults.color = "#888";
 const G = "#2e7d32",
