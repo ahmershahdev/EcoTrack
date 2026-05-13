@@ -654,18 +654,36 @@ section {
   line-height: 1.5;
 }
 .chart-card {
-  background: white;
-  border-radius: 16px;
-  border: 1px solid rgba(76, 175, 80, 0.1);
+  background: linear-gradient(180deg, #ffffff 0%, #f4fbf5 100%);
+  border-radius: 18px;
+  border: 1px solid rgba(76, 175, 80, 0.16);
   padding: 28px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  box-shadow: 0 12px 32px rgba(20, 70, 35, 0.08);
+  transition: all 0.35s ease;
   height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.chart-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top right,
+    rgba(76, 175, 80, 0.15),
+    transparent 55%
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
 }
 .chart-card:hover {
-  box-shadow: 0 12px 40px rgba(46, 125, 50, 0.12);
-  transform: translateY(-4px);
-  border-color: rgba(76, 175, 80, 0.25);
+  box-shadow: 0 18px 42px rgba(46, 125, 50, 0.18);
+  transform: translateY(-6px);
+  border-color: rgba(76, 175, 80, 0.35);
+}
+.chart-card:hover::after {
+  opacity: 1;
 }
 .chart-title {
   font-family: "Rajdhani", sans-serif;
@@ -676,7 +694,7 @@ section {
 }
 .chart-sub {
   font-size: 0.75rem;
-  color: #aaa;
+  color: #7b8b7b;
   margin-bottom: 18px;
 }
 .disease-card {
@@ -917,14 +935,30 @@ footer {
 }
 .reveal {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(26px) scale(0.98);
+  filter: blur(3px);
   transition:
-    opacity 0.6s ease,
-    transform 0.6s ease;
+    opacity 0.9s cubic-bezier(0.19, 1, 0.22, 1) var(--reveal-delay, 0ms),
+    transform 0.9s cubic-bezier(0.19, 1, 0.22, 1) var(--reveal-delay, 0ms),
+    filter 0.9s cubic-bezier(0.19, 1, 0.22, 1) var(--reveal-delay, 0ms);
+  will-change: transform, opacity, filter;
+}
+.reveal.reveal-left {
+  transform: translateX(-40px) scale(0.98);
+}
+.reveal.reveal-right {
+  transform: translateX(40px) scale(0.98);
+}
+.reveal.reveal-up {
+  transform: translateY(-30px) scale(0.98);
+}
+.reveal.reveal-down {
+  transform: translateY(30px) scale(0.98);
 }
 .reveal.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translate3d(0, 0, 0) scale(1);
+  filter: blur(0);
 }
 .gradient-line {
   height: 1px;
@@ -1453,5 +1487,11 @@ footer {
   }
   .gallery-card img {
     transition: none;
+  }
+  .reveal {
+    transition: none;
+    transform: none;
+    filter: none;
+    opacity: 1;
   }
 }
